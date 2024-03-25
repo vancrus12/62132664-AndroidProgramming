@@ -12,6 +12,7 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
 
 public class ManHinhTinhBMI extends JFrame {
 
@@ -26,12 +27,15 @@ public class ManHinhTinhBMI extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 400, 503);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(51, 204, 153));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Ứng dụng tính chỉ số BMI");
+		lblNewLabel.setForeground(new Color(0, 51, 255));
+		lblNewLabel.setBackground(new Color(255, 255, 255));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 25));
 		lblNewLabel.setBounds(31, 22, 313, 41);
@@ -60,6 +64,8 @@ public class ManHinhTinhBMI extends JFrame {
 		contentPane.add(txtCN);
 		
 		JButton btnTinhBMI = new JButton("Tính BMI");
+		btnTinhBMI.setForeground(new Color(255, 51, 0));
+		btnTinhBMI.setBackground(new Color(204, 102, 204));
 		btnTinhBMI.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				TinhChiSoBMI();
@@ -82,6 +88,8 @@ public class ManHinhTinhBMI extends JFrame {
 		txtKQ.setColumns(10);
 		
 		JLabel lblNhanXet = new JLabel("Nhận xét:");
+		lblNhanXet.setForeground(new Color(255, 255, 102));
+		lblNhanXet.setBackground(new Color(255, 255, 255));
 		lblNhanXet.setFont(new Font("Times New Roman", Font.PLAIN, 19));
 		lblNhanXet.setBounds(31, 365, 81, 31);
 		contentPane.add(lblNhanXet);
