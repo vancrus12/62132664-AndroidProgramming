@@ -100,5 +100,21 @@ public class ManHinhTinhBMI extends JFrame {
 		double CN = Double.parseDouble(str_CN);
 		double BMI = CN / (CC * CC);
 		txtKQ.setText(String.valueOf(BMI));
+		if(BMI < 16)
+			txtNX.setText(String.valueOf("Bạn gầy độ III!"));
+		else if(BMI >= 16 && BMI < 17)
+			txtNX.setText(String.valueOf("Bạn gầy độ II!"));
+		else if(BMI >= 17 && BMI < 18.5)
+			txtNX.setText(String.valueOf("Bạn gầy độ I!"));
+		else if(BMI >= 18.5 && BMI < 25)
+			txtNX.setText(String.valueOf("Bạn bình thường!"));
+		else if(BMI >= 25 && BMI < 30)
+			txtNX.setText(String.valueOf("Bạn thừa cân!"));
+		else if(BMI >= 30 && BMI < 35)
+			txtNX.setText(String.valueOf("Bạn béo phì độ I!"));
+		else if(BMI >= 35 && BMI < 40)
+			txtNX.setText(String.valueOf("Bạn béo phì độ II!"));
+		else if(BMI >= 40)
+			txtNX.setText(String.valueOf("Bạn béo phì độ III!"));
 	}
 }
