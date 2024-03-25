@@ -20,22 +20,22 @@ public class ManHinhTinhBMI extends JFrame {
 	private JTextField textField_2;
 	private JTextField textField_3;
 	public ManHinhTinhBMI() {
-		setTitle("\u1EE8ng d\u1EE5ng t\u00EDnh ch\u1EC9 s\u1ED1 BMI");
+		setTitle("Ứng dụng tính chỉ số BMI");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 400, 621);
+		setBounds(100, 100, 400, 503);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("\u1EE8ng d\u1EE5ng t\u00EDnh ch\u1EC9 s\u1ED1 BMI");
+		JLabel lblNewLabel = new JLabel("Ứng dụng tính chỉ số BMI");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 25));
 		lblNewLabel.setBounds(31, 22, 313, 41);
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("Chi\u1EC1u cao (cm)");
+		JLabel lblNewLabel_1 = new JLabel("Chiều cao (cm)");
 		lblNewLabel_1.setFont(new Font("Times New Roman", Font.PLAIN, 19));
 		lblNewLabel_1.setBounds(31, 82, 132, 31);
 		contentPane.add(lblNewLabel_1);
@@ -46,7 +46,7 @@ public class ManHinhTinhBMI extends JFrame {
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
-		JLabel lblNewLabel_1_1 = new JLabel("C\u00E2n n\u1EB7ng (kg)");
+		JLabel lblNewLabel_1_1 = new JLabel("Cân nặng (kg)");
 		lblNewLabel_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 19));
 		lblNewLabel_1_1.setBounds(31, 165, 132, 31);
 		contentPane.add(lblNewLabel_1_1);
@@ -57,12 +57,12 @@ public class ManHinhTinhBMI extends JFrame {
 		textField_1.setBounds(31, 206, 313, 31);
 		contentPane.add(textField_1);
 		
-		JButton btnNewButton = new JButton("T\u00EDnh BMI");
+		JButton btnNewButton = new JButton("Tính BMI");
 		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 15));
 		btnNewButton.setBounds(116, 260, 132, 31);
 		contentPane.add(btnNewButton);
 		
-		JLabel lblNewLabel_1_1_1 = new JLabel("K\u1EBFt qu\u1EA3:");
+		JLabel lblNewLabel_1_1_1 = new JLabel("Kết quả:");
 		lblNewLabel_1_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 19));
 		lblNewLabel_1_1_1.setBounds(31, 312, 66, 31);
 		contentPane.add(lblNewLabel_1_1_1);
@@ -74,7 +74,7 @@ public class ManHinhTinhBMI extends JFrame {
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
-		JLabel lblNewLabel_1_1_1_1 = new JLabel("Nh\u1EADn x\u00E9t:");
+		JLabel lblNewLabel_1_1_1_1 = new JLabel("Nhận xét:");
 		lblNewLabel_1_1_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 19));
 		lblNewLabel_1_1_1_1.setBounds(31, 365, 81, 31);
 		contentPane.add(lblNewLabel_1_1_1_1);
