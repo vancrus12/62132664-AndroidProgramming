@@ -10,15 +10,17 @@ import java.awt.Font;
 import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class ManHinhTinhBMI extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
+	private JTextField txtCC;
+	private JTextField txtCN;
+	private JTextField txtKQ;
+	private JTextField txtNX;
 	public ManHinhTinhBMI() {
 		setTitle("Ứng dụng tính chỉ số BMI");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -35,55 +37,68 @@ public class ManHinhTinhBMI extends JFrame {
 		lblNewLabel.setBounds(31, 22, 313, 41);
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("Chiều cao (cm)");
-		lblNewLabel_1.setFont(new Font("Times New Roman", Font.PLAIN, 19));
-		lblNewLabel_1.setBounds(31, 82, 132, 31);
-		contentPane.add(lblNewLabel_1);
+		JLabel lblNhapChieuCao = new JLabel("Chiều cao (m)");
+		lblNhapChieuCao.setFont(new Font("Times New Roman", Font.PLAIN, 19));
+		lblNhapChieuCao.setBounds(31, 82, 132, 31);
+		contentPane.add(lblNhapChieuCao);
 		
-		textField = new JTextField();
-		textField.setFont(new Font("Times New Roman", Font.PLAIN, 17));
-		textField.setBounds(31, 124, 313, 31);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		txtCC = new JTextField();
+		txtCC.setFont(new Font("Times New Roman", Font.PLAIN, 17));
+		txtCC.setBounds(31, 124, 313, 31);
+		contentPane.add(txtCC);
+		txtCC.setColumns(10);
 		
-		JLabel lblNewLabel_1_1 = new JLabel("Cân nặng (kg)");
-		lblNewLabel_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 19));
-		lblNewLabel_1_1.setBounds(31, 165, 132, 31);
-		contentPane.add(lblNewLabel_1_1);
+		JLabel lblNhapCanNang = new JLabel("Cân nặng (kg)");
+		lblNhapCanNang.setFont(new Font("Times New Roman", Font.PLAIN, 19));
+		lblNhapCanNang.setBounds(31, 165, 132, 31);
+		contentPane.add(lblNhapCanNang);
 		
-		textField_1 = new JTextField();
-		textField_1.setFont(new Font("Times New Roman", Font.PLAIN, 17));
-		textField_1.setColumns(10);
-		textField_1.setBounds(31, 206, 313, 31);
-		contentPane.add(textField_1);
+		txtCN = new JTextField();
+		txtCN.setFont(new Font("Times New Roman", Font.PLAIN, 17));
+		txtCN.setColumns(10);
+		txtCN.setBounds(31, 206, 313, 31);
+		contentPane.add(txtCN);
 		
-		JButton btnNewButton = new JButton("Tính BMI");
-		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 15));
-		btnNewButton.setBounds(116, 260, 132, 31);
-		contentPane.add(btnNewButton);
+		JButton btnTinhBMI = new JButton("Tính BMI");
+		btnTinhBMI.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				TinhChiSoBMI();
+			}
+		});
+		btnTinhBMI.setFont(new Font("Times New Roman", Font.PLAIN, 15));
+		btnTinhBMI.setBounds(116, 260, 132, 31);
+		contentPane.add(btnTinhBMI);
 		
-		JLabel lblNewLabel_1_1_1 = new JLabel("Kết quả:");
-		lblNewLabel_1_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 19));
-		lblNewLabel_1_1_1.setBounds(31, 312, 66, 31);
-		contentPane.add(lblNewLabel_1_1_1);
+		JLabel lblKetQua = new JLabel("Kết quả:");
+		lblKetQua.setFont(new Font("Times New Roman", Font.PLAIN, 19));
+		lblKetQua.setBounds(31, 312, 66, 31);
+		contentPane.add(lblKetQua);
 		
-		textField_2 = new JTextField();
-		textField_2.setFont(new Font("Times New Roman", Font.PLAIN, 15));
-		textField_2.setEditable(false);
-		textField_2.setBounds(131, 312, 208, 27);
-		contentPane.add(textField_2);
-		textField_2.setColumns(10);
+		txtKQ = new JTextField();
+		txtKQ.setFont(new Font("Times New Roman", Font.PLAIN, 15));
+		txtKQ.setEditable(false);
+		txtKQ.setBounds(131, 312, 208, 27);
+		contentPane.add(txtKQ);
+		txtKQ.setColumns(10);
 		
-		JLabel lblNewLabel_1_1_1_1 = new JLabel("Nhận xét:");
-		lblNewLabel_1_1_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 19));
-		lblNewLabel_1_1_1_1.setBounds(31, 365, 81, 31);
-		contentPane.add(lblNewLabel_1_1_1_1);
+		JLabel lblNhanXet = new JLabel("Nhận xét:");
+		lblNhanXet.setFont(new Font("Times New Roman", Font.PLAIN, 19));
+		lblNhanXet.setBounds(31, 365, 81, 31);
+		contentPane.add(lblNhanXet);
 		
-		textField_3 = new JTextField();
-		textField_3.setFont(new Font("Times New Roman", Font.PLAIN, 15));
-		textField_3.setEditable(false);
-		textField_3.setColumns(10);
-		textField_3.setBounds(131, 368, 208, 27);
-		contentPane.add(textField_3);
+		txtNX = new JTextField();
+		txtNX.setFont(new Font("Times New Roman", Font.PLAIN, 15));
+		txtNX.setEditable(false);
+		txtNX.setColumns(10);
+		txtNX.setBounds(131, 368, 208, 27);
+		contentPane.add(txtNX);
+	}
+	void TinhChiSoBMI() {
+		String str_CC = txtCC.getText();
+		String str_CN = txtCN.getText();
+		double CC = Double.parseDouble(str_CC);
+		double CN = Double.parseDouble(str_CN);
+		double BMI = CN / (CC * CC);
+		txtKQ.setText(String.valueOf(BMI));
 	}
 }
