@@ -25,7 +25,7 @@ public class ManHinhTinhBMI extends JFrame {
 	public ManHinhTinhBMI() {
 		setTitle("Ứng dụng tính chỉ số BMI");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 400, 503);
+		setBounds(100, 100, 400, 539);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(51, 204, 153));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -35,7 +35,7 @@ public class ManHinhTinhBMI extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("Ứng dụng tính chỉ số BMI");
 		lblNewLabel.setForeground(new Color(0, 51, 255));
-		lblNewLabel.setBackground(new Color(255, 255, 255));
+		lblNewLabel.setBackground(new Color(255, 204, 51));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 25));
 		lblNewLabel.setBounds(31, 22, 313, 41);
@@ -65,7 +65,7 @@ public class ManHinhTinhBMI extends JFrame {
 		
 		JButton btnTinhBMI = new JButton("Tính BMI");
 		btnTinhBMI.setForeground(new Color(255, 51, 0));
-		btnTinhBMI.setBackground(new Color(204, 102, 204));
+		btnTinhBMI.setBackground(new Color(0, 51, 102));
 		btnTinhBMI.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				TinhChiSoBMI();
