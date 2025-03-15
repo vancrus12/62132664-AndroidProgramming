@@ -75,16 +75,16 @@
                     android:layout_height="match_parent">
 
                     <TextView
+                        android:id="@+id/clothingName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/clothingName"
-                        android:text="Clothing"
-                        android:textSize="20sp"
-                        android:textColor="@color/lavender"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/clothingImage"
                         android:layout_centerHorizontal="true"
-                        android:layout_below="@+id/clothingImage"/>
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Clothing"
+                        android:textColor="@color/lavender"
+                        android:textSize="20sp" />
 
                     <ImageView
                         android:layout_width="70dp"
