@@ -28,4 +28,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/nutSo3"
+        android:text="BUTTON 3"
+        android:textSize="20dp"
+        android:textColor="#FF5722"
+        android:background="#673AB7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
 </LinearLayout>
