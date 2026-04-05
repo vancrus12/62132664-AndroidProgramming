@@ -5,31 +5,31 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SubActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="211dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="98dp"
-        android:text="Man hinh trang chu"
+        android:id="@+id/textView2"
+        android:layout_width="281dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="63dp"
+        android:text="Ban dang o man hinh thu 2"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnChuyen"
-        android:layout_width="171dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="120dp"
-        android:text="Sang man hinh khac"
+        android:id="@+id/btnQuayLai"
+        android:layout_width="179dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="90dp"
+        android:text="Quay lai trang chu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
