@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = new ChucNang2();
                 } else if (itemId == R.id.navigation_chucnang3) {
                     selectedFragment = new ChucNang3();
-                } else if (itemId == R.id.navigation_chucnang4) {
+                } else if (itemId == R.id.navigation_chucnang4)
                     selectedFragment = new ChucNang4();
                     // It will help to replace the
                     // one fragment to other.
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentSpace, selectedFragment).commit();
                     }
                     return true;
-                }
-            });
-        }
+            }
+        });
     }
+}
